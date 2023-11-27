@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Restaurant.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="topnav" id="myTopnav">
+            <a class="nav">Home</a>
+            <a class="nav">Order</a>
+            <a class="nav">Food</a>
+            <a class="nav">Restaurant</a>
+            <a class="nav">Testinomaials</a>
+            <a class="nav">ContactUS</a>
+
+            <a class="containerIn">
+
+                <i class="headIcon fa-solid fa-phone"></i>
+                <i class="headIcon fa-solid fa-cart-shopping"></i>
+            </a>
+            <a style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+
+    </div>
+
+    <div class="mainContent">
+        <img class="imageMain" src="header.png" alt="image" />
+        <div class="paraContent">
+            <br />
+            <div class="capital">Lorem Ipsum</div>
+            lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Laboriosam ea sequi neque voluptate animi
+            eaque maiores magnam, debitis, in similique voluptas modi iusto arch
+            itecto commodi mollitia quidem? Optio, deserunt repellendus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eius maxime unde expedita necessitatibus quo velit, ut fuga
+            repellendus!
+        </div>
+
+    </div>
+    <div id="orderList">Order Now</div>
+    <br />
+    <div class="bottomw">
+        <div class="bottom">
+            <div class="order1">
+                <img class="image1" src="Order1.png" />
+                <h5>PASTA</h5>
+                <h6>Lorem ipsum dolor sit amet.</h6>
+            </div>
+            <div class="order2">
+                <img class="image2" src="Order2.png" />
+                <h5>PIZZA</h5>
+                <h6>Lorem ipsum dolor sit amet.</h6>
+            </div>
+            <div class="order3">
+                <img class="image3" src="Order3.png" />
+                <h5>BURGER</h5>
+                <h6>Lorem ipsum dolor sit amet.</h6>
+
+            </div>
+        </div>
+        <div class="bt1">
+            <button class="orderBtn">Order</button>
+        </div>
+    </div>
+
+    </div>
+    <script>
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        } 
+    </script>
+
+</body>
+
+</html>
